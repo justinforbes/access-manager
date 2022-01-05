@@ -20,7 +20,7 @@ namespace Lithnet.AccessManager.Service.Models
 
         public AccessMask RequestType { get; set; }
 
-        public AccessMask AllowedRequestTypes { get; set; }
+        public List<AccessMask> AllowedRequestTypes { get; set; }
 
         public bool ShowReason { get; set; }
 
