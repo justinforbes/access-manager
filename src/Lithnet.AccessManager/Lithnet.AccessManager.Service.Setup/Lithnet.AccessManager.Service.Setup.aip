@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="17.1.2" version="18.8.1" Modules="enterprise" RootPath="." Language="en" Id="{8ADA5C46-1F9D-45B3-A39D-37B0D337D0DD}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="17.1.2" version="19.0" Modules="enterprise" RootPath="." Language="en" Id="{8ADA5C46-1F9D-45B3-A39D-37B0D337D0DD}">
   <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
     <ROW Name="MigrationUninstallCode" Value="{D17AC68C-2F91-4344-A3BF-B13404566A40}"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
-    <ROW Property="AI_CURRENT_YEAR" Value="2021" ValueLocId="-"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2022" ValueLocId="-"/>
     <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
     <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_INTERNET_CONNECTION"/>
     <ROW Property="AI_PREREQ_REPAIR_ENABLED" MultiBuildValue="DefaultBuild:1"/>
@@ -98,17 +98,13 @@
     <ROW Component="ConfigPath" ComponentId="{07BA9FC9-8B21-48F0-AEC8-07C734FFA085}" Directory_="APPDIR" Attributes="260" KeyPath="ConfigPath"/>
     <ROW Component="ControlzEx.dll" ComponentId="{9C3762B9-ABAB-4449-A6AF-91367E2F6403}" Directory_="APPDIR" Attributes="0" KeyPath="ControlzEx.dll"/>
     <ROW Component="CsvHelper.dll" ComponentId="{642CAADC-1A42-4939-8198-51AA2F539E17}" Directory_="APPDIR" Attributes="0" KeyPath="CsvHelper.dll"/>
+    <ROW Component="CsvHelper.dll_1" ComponentId="{BA6DEB51-61E4-4FA3-95AE-CA677C498B2C}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="CsvHelper.dll_1"/>
     <ROW Component="Diagnostics.format.ps1xml" ComponentId="{F5E4C148-FB9F-4A3D-9DBE-4BF6A60D75B8}" Directory_="Microsoft.PowerShell.Diagnostic_Dir" Attributes="0" KeyPath="Diagnostics.format.ps1xml" Type="0"/>
     <ROW Component="EventLogMessages.dll" ComponentId="{7FE7C140-8CAE-47B1-9473-16C699118079}" Directory_="APPDIR" Attributes="256" KeyPath="EventLogMessages.dll"/>
     <ROW Component="FluentValidation.dll" ComponentId="{90128C55-8A3A-41CA-8321-B747036BDF5F}" Directory_="APPDIR" Attributes="0" KeyPath="FluentValidation.dll"/>
     <ROW Component="HtmlAgilityPack.dll" ComponentId="{1178AE64-C2F8-4C96-9465-D773827E118D}" Directory_="APPDIR" Attributes="0" KeyPath="HtmlAgilityPack.dll"/>
     <ROW Component="InconsolataRegular.ttf" ComponentId="{F6AD0CA7-6D85-4C26-A8EC-DE54F30EEA1F}" Directory_="fonts_Dir" Attributes="0" Type="0"/>
     <ROW Component="Lithnet" ComponentId="{8D5B4FC5-E8AA-4F6A-8DFD-EECEB04DC679}" Directory_="Lithnet_Dir" Attributes="0"/>
-    <ROW Component="Lithnet.AccessManager.Api.Shared.dll" ComponentId="{CF2EFC04-B984-4A26-869A-9BF9711F8AA2}" Directory_="APPDIR" Attributes="0" KeyPath="Lithnet.AccessManager.Api.Shared.dll"/>
-    <ROW Component="Lithnet.AccessManager.Api.dll" ComponentId="{564303D1-8A9D-44AF-B433-F9751395706A}" Directory_="APPDIR" Attributes="256" KeyPath="Lithnet.AccessManager.Api.dll"/>
-    <ROW Component="Lithnet.AccessManager.Api.exe" ComponentId="{8A984B54-AD5A-425D-BB62-B19305F2E3A3}" Directory_="APPDIR" Attributes="256" KeyPath="Lithnet.AccessManager.Api.exe"/>
-    <ROW Component="Lithnet.AccessManager.Cryptography.dll" ComponentId="{B0C46305-C9B7-4217-9DD5-49C51A7B3FF6}" Directory_="APPDIR" Attributes="0" KeyPath="Lithnet.AccessManager.Cryptography.dll"/>
-    <ROW Component="Lithnet.AccessManager.Cryptography.dll_1" ComponentId="{AFD7C57C-6B56-4971-B2F3-CE6103D65D32}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="Lithnet.AccessManager.Cryptography.dll_1"/>
     <ROW Component="Lithnet.AccessManager.Enterprise.dll" ComponentId="{D0D3FE0C-DC3A-45A6-B1A1-7FAB92D43C71}" Directory_="APPDIR" Attributes="0" KeyPath="Lithnet.AccessManager.Enterprise.dll"/>
     <ROW Component="Lithnet.AccessManager.PowerShell.dll" ComponentId="{F1CA2D0D-972E-4AA2-BD2A-68F8281DAD34}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="256" KeyPath="Lithnet.AccessManager.PowerShell.dll"/>
     <ROW Component="Lithnet.AccessManager.Server.UI.deps.json" ComponentId="{ED70E59C-9E78-4FA9-A010-413CA7967966}" Directory_="APPDIR" Attributes="0" KeyPath="Lithnet.AccessManager.Server.UI.deps.json" Type="0"/>
@@ -169,6 +165,10 @@
     <ROW Component="Microsoft.AspNetCore.Cryptography.Internal.dll" ComponentId="{5FA995F1-2707-4CE4-AAB5-055218A8114F}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.AspNetCore.Cryptography.Internal.dll"/>
     <ROW Component="Microsoft.AspNetCore.DataProtection.Abstractions.dll" ComponentId="{3CB081FB-371D-47B0-85B9-7D22C8DFC393}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.AspNetCore.DataProtection.Abstractions.dll"/>
     <ROW Component="Microsoft.AspNetCore.DataProtection.dll" ComponentId="{0F1B28A3-8389-4C9D-AC34-BA20DE50AE96}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.AspNetCore.DataProtection.dll"/>
+    <ROW Component="Microsoft.AspNetCore.Http.Abstractions.dll" ComponentId="{E5816161-4F1A-432C-912B-3DA6F261B801}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.AspNetCore.Http.Abstractions.dll"/>
+    <ROW Component="Microsoft.AspNetCore.Http.Extensions.dll" ComponentId="{B5C1F1DD-6BE2-4889-B05A-A23613281EBB}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.AspNetCore.Http.Extensions.dll"/>
+    <ROW Component="Microsoft.AspNetCore.Http.Features.dll" ComponentId="{F9A0B0B7-24E6-4072-AE10-2D0AA715169E}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.AspNetCore.Http.Features.dll"/>
+    <ROW Component="Microsoft.AspNetCore.HttpOverrides.dll" ComponentId="{4E03B4E3-3608-4120-AB20-2AC2F99FD3EC}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.AspNetCore.HttpOverrides.dll"/>
     <ROW Component="Microsoft.Azure.Services.AppAuthentication.dll" ComponentId="{C4E26029-EEF9-4701-888B-74F4C00DD557}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Azure.Services.AppAuthentication.dll"/>
     <ROW Component="Microsoft.Bcl.AsyncInterfaces.dll" ComponentId="{12C80D74-DBD4-48FE-A7DC-001835D693A3}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Bcl.AsyncInterfaces.dll"/>
     <ROW Component="Microsoft.Bcl.AsyncInterfaces.dll_1" ComponentId="{1250A0E8-C28D-4754-84A3-BF51300ED690}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="Microsoft.Bcl.AsyncInterfaces.dll_1"/>
@@ -190,8 +190,6 @@
     <ROW Component="Microsoft.Extensions.DependencyInjection.Abstractions.dll" ComponentId="{B3FEEEBE-4A5F-4468-AAD8-9086B2F8BA25}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
     <ROW Component="Microsoft.Extensions.DependencyInjection.Abstractions.dll_1" ComponentId="{19F68A2B-F446-42A5-B6B1-313B0D334872}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.Abstractions.dll_1"/>
     <ROW Component="Microsoft.Extensions.DependencyInjection.dll" ComponentId="{A60A83D7-B83F-46EB-8E0E-B3FCC29F10E4}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.dll"/>
-    <ROW Component="Microsoft.Extensions.DependencyInjection.dll_1" ComponentId="{873CB984-6893-40A1-89A4-66E613A08177}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.dll_1"/>
-    <ROW Component="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" ComponentId="{CEC32403-68D6-40DA-98E2-C19067E80A41}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll"/>
     <ROW Component="Microsoft.Extensions.FileProviders.Abstractions.dll" ComponentId="{8A26B84E-D1EB-4A1F-8E29-5CFA9B7ECEB1}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.FileProviders.Abstractions.dll"/>
     <ROW Component="Microsoft.Extensions.FileProviders.Abstractions.dll_1" ComponentId="{D7880797-3FBD-474E-8200-3C71FF56B1BB}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="Microsoft.Extensions.FileProviders.Abstractions.dll_1"/>
     <ROW Component="Microsoft.Extensions.FileProviders.Embedded.dll" ComponentId="{D90D8CD1-FCCA-4E0D-A44B-F7A518C40FD0}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.FileProviders.Embedded.dll"/>
@@ -213,9 +211,6 @@
     <ROW Component="Microsoft.Extensions.Options.dll" ComponentId="{4EA295F0-69CA-4F41-A933-14FF8AE2E9D5}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Options.dll"/>
     <ROW Component="Microsoft.Extensions.Primitives.dll" ComponentId="{6E3A5759-974D-45BB-9C4F-F756D71128AF}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Primitives.dll"/>
     <ROW Component="Microsoft.Extensions.Primitives.dll_1" ComponentId="{4F7DD03E-F0B6-4404-884A-5CF3F9A16620}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="Microsoft.Extensions.Primitives.dll_1"/>
-    <ROW Component="Microsoft.Graph.Auth.dll" ComponentId="{117F6274-4852-4300-8810-CA4523D113DE}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Graph.Auth.dll"/>
-    <ROW Component="Microsoft.Graph.Core.dll" ComponentId="{A3CDF02D-7A67-41D9-BDBF-61773E86394D}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Graph.Core.dll"/>
-    <ROW Component="Microsoft.Graph.dll" ComponentId="{F3F13817-9216-496F-BE58-79A4EF6A0BF5}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Graph.dll"/>
     <ROW Component="Microsoft.Identity.Client.dll" ComponentId="{744D75CE-E2A2-41DC-A8DC-EDFEA960AEBA}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Identity.Client.dll"/>
     <ROW Component="Microsoft.IdentityModel.Clients.ActiveDirectory.dll" ComponentId="{31922643-4D25-459A-B665-24AA9A634B2F}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.IdentityModel.Clients.ActiveDirectory.dll"/>
     <ROW Component="Microsoft.IdentityModel.JsonWebTokens.dll" ComponentId="{7501CDE8-786E-4BE4-9272-A3B8938FD408}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.IdentityModel.JsonWebTokens.dll"/>
@@ -229,6 +224,7 @@
     <ROW Component="Microsoft.Management.Infrastructure.CimCmdlets.dll" ComponentId="{A304FB14-3B8F-46F9-8686-D265A739B35B}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Management.Infrastructure.CimCmdlets.dll"/>
     <ROW Component="Microsoft.Management.Infrastructure.Native.dll" ComponentId="{A83A5EB9-D234-4B6F-A3CF-35B3B9CF248F}" Directory_="APPDIR" Attributes="256" KeyPath="Microsoft.Management.Infrastructure.Native.dll"/>
     <ROW Component="Microsoft.Management.Infrastructure.dll" ComponentId="{22224915-97F5-422C-BA69-54A61FA811DC}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Management.Infrastructure.dll"/>
+    <ROW Component="Microsoft.Net.Http.Headers.dll" ComponentId="{060DAED0-336A-42DA-B789-75DCDF5B6316}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Net.Http.Headers.dll"/>
     <ROW Component="Microsoft.PowerShell.Commands.Diagnostics.dll" ComponentId="{76F6920D-00EC-468E-B997-EC3E6B691490}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.PowerShell.Commands.Diagnostics.dll"/>
     <ROW Component="Microsoft.PowerShell.Commands.Management.dll" ComponentId="{C9AB4CCE-E5D5-4FC7-A2A2-2707EE6EA297}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.PowerShell.Commands.Management.dll"/>
     <ROW Component="Microsoft.PowerShell.Commands.Utility.dll" ComponentId="{D4C8A53A-17A6-4EE2-8C3B-16C4B714C4CA}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.PowerShell.Commands.Utility.dll"/>
@@ -250,13 +246,12 @@
     <ROW Component="Microsoft.WSMan.Runtime.dll" ComponentId="{D96945D9-54CC-4F68-9D0E-171FC5E7D149}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.WSMan.Runtime.dll"/>
     <ROW Component="Microsoft.Win32.Primitives.dll" ComponentId="{CECDD0D2-B89C-4912-81FB-8B7FB41A02AD}" Directory_="ref_Dir" Attributes="0" KeyPath="Microsoft.Win32.Primitives.dll"/>
     <ROW Component="Microsoft.Win32.Registry.AccessControl.dll" ComponentId="{56BDF4D8-B502-4AFB-B225-330579B4DC7C}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Win32.Registry.AccessControl.dll"/>
-    <ROW Component="Microsoft.Win32.Registry.dll" ComponentId="{00270173-1C46-4ECF-AA53-2C31DD780328}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Win32.Registry.dll"/>
-    <ROW Component="Microsoft.Win32.SystemEvents.dll" ComponentId="{9460F734-50EE-4362-8331-585E52846394}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Win32.SystemEvents.dll"/>
     <ROW Component="Microsoft.Xaml.Behaviors.dll" ComponentId="{CDCD8458-38E7-42E1-99DB-695B365ACCE3}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Xaml.Behaviors.dll"/>
     <ROW Component="NJsonSchema.dll" ComponentId="{0DF2306F-10F4-42B1-85B6-031CE00F7C33}" Directory_="APPDIR" Attributes="0" KeyPath="NJsonSchema.dll"/>
     <ROW Component="NLog.Extensions.Logging.dll" ComponentId="{F82A9837-0E86-4516-8154-FC85F1338912}" Directory_="APPDIR" Attributes="0" KeyPath="NLog.Extensions.Logging.dll"/>
     <ROW Component="NLog.Web.AspNetCore.dll" ComponentId="{BE1BF87A-39E7-4B38-A2ED-43AC639610E6}" Directory_="APPDIR" Attributes="0" KeyPath="NLog.Web.AspNetCore.dll"/>
     <ROW Component="NLog.dll" ComponentId="{A90F678F-CC68-43FA-98D6-DA6CA2B42D39}" Directory_="APPDIR" Attributes="0" KeyPath="NLog.dll"/>
+    <ROW Component="NLog.dll_1" ComponentId="{E318576A-EE1B-4776-9055-F22BBA9F9634}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="NLog.dll_1"/>
     <ROW Component="NamedPipeServerStream.NetFrameworkVersion.dll" ComponentId="{A47C277D-A77D-4860-B385-82A58C7044D2}" Directory_="APPDIR" Attributes="0" KeyPath="NamedPipeServerStream.NetFrameworkVersion.dll"/>
     <ROW Component="Namotion.Reflection.dll" ComponentId="{EBB031E1-E333-43C9-A3DD-0FF3CBEFF67D}" Directory_="APPDIR" Attributes="0" KeyPath="Namotion.Reflection.dll"/>
     <ROW Component="Nerdbank.Streams.dll" ComponentId="{4D60C104-A1A0-438C-B329-A4429748AF32}" Directory_="APPDIR" Attributes="0" KeyPath="Nerdbank.Streams.dll"/>
@@ -307,7 +302,6 @@
     <ROW Component="System.Diagnostics.Debug.dll" ComponentId="{2A960A8E-A6C8-4AF8-9A75-83D4592B3BFD}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Diagnostics.Debug.dll"/>
     <ROW Component="System.Diagnostics.DiagnosticSource.dll" ComponentId="{F02B31E3-BBB4-4648-A729-C6D7743A2782}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Diagnostics.DiagnosticSource.dll"/>
     <ROW Component="System.Diagnostics.DiagnosticSource.dll_1" ComponentId="{D2B179DC-8C04-4D5F-AB79-5C711568EC9F}" Directory_="APPDIR" Attributes="0" KeyPath="System.Diagnostics.DiagnosticSource.dll_1"/>
-    <ROW Component="System.Diagnostics.EventLog.dll" ComponentId="{60054A75-F1E6-4CC0-8C34-E2175AB2447E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Diagnostics.EventLog.dll"/>
     <ROW Component="System.Diagnostics.FileVersionInfo.dll" ComponentId="{9F0D26AD-4C2D-4254-B08F-8555065C063E}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Diagnostics.FileVersionInfo.dll"/>
     <ROW Component="System.Diagnostics.PerformanceCounter.dll" ComponentId="{64CA3E19-2C23-47BA-9641-5BF8FDA24BC1}" Directory_="APPDIR" Attributes="0" KeyPath="System.Diagnostics.PerformanceCounter.dll"/>
     <ROW Component="System.Diagnostics.Process.dll" ComponentId="{AA776AFB-41D9-4DDE-AB39-2CA1BA323AF5}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Diagnostics.Process.dll"/>
@@ -319,7 +313,6 @@
     <ROW Component="System.DirectoryServices.AccountManagement.dll" ComponentId="{E0712A31-968B-4E51-9787-20724B8B8068}" Directory_="APPDIR" Attributes="0" KeyPath="System.DirectoryServices.AccountManagement.dll"/>
     <ROW Component="System.DirectoryServices.Protocols.dll" ComponentId="{F7CDDFC6-72CF-412F-AAE2-1EDA02DADFD0}" Directory_="APPDIR" Attributes="0" KeyPath="System.DirectoryServices.Protocols.dll"/>
     <ROW Component="System.DirectoryServices.dll" ComponentId="{5BDF998B-43FC-4D2C-B7D4-C30D2619AEE1}" Directory_="APPDIR" Attributes="0" KeyPath="System.DirectoryServices.dll"/>
-    <ROW Component="System.Drawing.Common.dll" ComponentId="{44061EFC-CE4B-4499-8CBE-25D1BB21660E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.Common.dll"/>
     <ROW Component="System.Drawing.Primitives.dll" ComponentId="{3303CA18-DDAC-449A-9262-78B2735956BE}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Drawing.Primitives.dll"/>
     <ROW Component="System.Drawing.dll" ComponentId="{4781D115-C12C-47C7-A888-2B5B34D69BE5}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Drawing.dll"/>
     <ROW Component="System.Dynamic.Runtime.dll" ComponentId="{20B88BF5-5154-42D5-80B7-3792BE78CFB0}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Dynamic.Runtime.dll"/>
@@ -330,7 +323,6 @@
     <ROW Component="System.IO.Compression.FileSystem.dll" ComponentId="{A977EA81-76EF-4331-968C-91B3A945FF4D}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.Compression.FileSystem.dll"/>
     <ROW Component="System.IO.Compression.ZipFile.dll" ComponentId="{E55F9CDF-E712-4073-9022-7F298BC2E399}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.Compression.ZipFile.dll"/>
     <ROW Component="System.IO.Compression.dll" ComponentId="{5DD46815-5A4A-495D-997F-335C9130E3D9}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.Compression.dll"/>
-    <ROW Component="System.IO.FileSystem.AccessControl.dll" ComponentId="{5F57FB5D-B635-4D0C-8D63-E58C24423019}" Directory_="APPDIR" Attributes="0" KeyPath="System.IO.FileSystem.AccessControl.dll"/>
     <ROW Component="System.IO.FileSystem.DriveInfo.dll" ComponentId="{871BB73C-4EDD-48CE-AFE9-C978E5230F4C}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.FileSystem.DriveInfo.dll"/>
     <ROW Component="System.IO.FileSystem.Primitives.dll" ComponentId="{939FA925-52B4-4A51-AED2-AB710002E85A}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.FileSystem.Primitives.dll"/>
     <ROW Component="System.IO.FileSystem.Watcher.dll" ComponentId="{AF4C2AE0-C2AD-4092-8BEA-33E874C6B0C0}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.FileSystem.Watcher.dll"/>
@@ -338,12 +330,12 @@
     <ROW Component="System.IO.IsolatedStorage.dll" ComponentId="{AE25E0A4-CC76-4C47-A9AF-712E870B99EB}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.IsolatedStorage.dll"/>
     <ROW Component="System.IO.MemoryMappedFiles.dll" ComponentId="{BDA7582F-5D56-4E1F-A0B8-86EE87474187}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.MemoryMappedFiles.dll"/>
     <ROW Component="System.IO.Packaging.dll" ComponentId="{EC339A5E-9FC4-4F72-A2EC-3D1244F4FC63}" Directory_="APPDIR" Attributes="0" KeyPath="System.IO.Packaging.dll"/>
+    <ROW Component="System.IO.Pipelines.dll" ComponentId="{BADAB33F-1D98-4182-BC43-A83BAA6A18DB}" Directory_="APPDIR" Attributes="0" KeyPath="System.IO.Pipelines.dll"/>
     <ROW Component="System.IO.Pipes.dll" ComponentId="{14881EEB-F7EC-402A-AB82-092287B1455B}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.Pipes.dll"/>
     <ROW Component="System.IO.Ports.dll" ComponentId="{BB64B6CA-78D3-46D4-88E2-008EA077132A}" Directory_="APPDIR" Attributes="0" KeyPath="System.IO.Ports.dll"/>
     <ROW Component="System.IO.UnmanagedMemoryStream.dll" ComponentId="{30B49399-A266-4B39-BCA4-C70824F1F7BA}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.UnmanagedMemoryStream.dll"/>
     <ROW Component="System.IO.dll" ComponentId="{58AE1064-9828-4AD6-883B-67ACF1F60105}" Directory_="ref_Dir" Attributes="0" KeyPath="System.IO.dll"/>
     <ROW Component="System.IdentityModel.Tokens.Jwt.dll" ComponentId="{3CA08793-80E7-499D-8425-6EE5632FBDA8}" Directory_="APPDIR" Attributes="0" KeyPath="System.IdentityModel.Tokens.Jwt.dll"/>
-    <ROW Component="System.Linq.Async.dll" ComponentId="{35C42F89-3B7D-44C7-A604-D1240290DA83}" Directory_="APPDIR" Attributes="0" KeyPath="System.Linq.Async.dll"/>
     <ROW Component="System.Linq.Expressions.dll" ComponentId="{EBD7BBA4-ECBC-4AE1-814F-CC5F662A118B}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Linq.Expressions.dll"/>
     <ROW Component="System.Linq.Parallel.dll" ComponentId="{F62A363C-1FBC-40D8-BBD6-E0256F576B0D}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Linq.Parallel.dll"/>
     <ROW Component="System.Linq.Queryable.dll" ComponentId="{A5408DCA-DA6F-4CD8-B11F-1284CBB6A4F4}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Linq.Queryable.dll"/>
@@ -407,7 +399,6 @@
     <ROW Component="System.Runtime.Serialization.Xml.dll" ComponentId="{35E5C017-C135-46B0-AD93-A8355450FDFF}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.Xml.dll"/>
     <ROW Component="System.Runtime.Serialization.dll" ComponentId="{1E022F1C-DB60-42C1-9E94-59E3F3477F1E}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.dll"/>
     <ROW Component="System.Runtime.dll" ComponentId="{EEAEC30F-783C-40DB-9BDC-37D5BCBBCFD3}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Runtime.dll"/>
-    <ROW Component="System.Security.AccessControl.dll" ComponentId="{8B359093-8956-4D38-9809-68C5678C3D3E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Security.AccessControl.dll"/>
     <ROW Component="System.Security.Claims.dll" ComponentId="{9D7CB3A9-57E8-4CB4-9523-0D499A6B1BCF}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Security.Claims.dll"/>
     <ROW Component="System.Security.Cryptography.Algorithms.dll" ComponentId="{B26787FC-AE2F-46CE-B356-AB47A508ACCC}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Algorithms.dll"/>
     <ROW Component="System.Security.Cryptography.Cng.dll" ComponentId="{6A47C7A7-89FF-4D0D-8A90-2BA2D39C55A5}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="System.Security.Cryptography.Cng.dll"/>
@@ -417,7 +408,6 @@
     <ROW Component="System.Security.Cryptography.ProtectedData.dll" ComponentId="{CE9FF8CD-7738-42EC-9190-EC311C267239}" Directory_="APPDIR" Attributes="0" KeyPath="System.Security.Cryptography.ProtectedData.dll"/>
     <ROW Component="System.Security.Cryptography.ProtectedData.dll_1" ComponentId="{C3091E93-FAE5-4B90-A3DB-A591670C4790}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="System.Security.Cryptography.ProtectedData.dll_1"/>
     <ROW Component="System.Security.Cryptography.X509Certificates.dll" ComponentId="{37EED6A0-8B6E-42A2-9475-66958B2171DE}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Security.Cryptography.X509Certificates.dll"/>
-    <ROW Component="System.Security.Permissions.dll" ComponentId="{8CAAB969-CF45-4B57-AD6B-644F243A39E6}" Directory_="APPDIR" Attributes="0" KeyPath="System.Security.Permissions.dll"/>
     <ROW Component="System.Security.Principal.Windows.dll" ComponentId="{9BE9E9D4-2113-4DF6-B703-43289C206045}" Directory_="APPDIR" Attributes="0" KeyPath="System.Security.Principal.Windows.dll"/>
     <ROW Component="System.Security.Principal.dll" ComponentId="{F4953C9A-6B54-44AC-BEA8-E325FB3B300A}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Security.Principal.dll"/>
     <ROW Component="System.Security.SecureString.dll" ComponentId="{FBC95BAA-B602-4CDC-B279-476C4CDDDDEA}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Security.SecureString.dll"/>
@@ -457,7 +447,6 @@
     <ROW Component="System.ValueTuple.dll_1" ComponentId="{EB96A5BF-C4EC-4602-A8C8-127D32EE1D53}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="System.ValueTuple.dll_1"/>
     <ROW Component="System.Web.HttpUtility.dll" ComponentId="{05A0C6D3-119A-4310-B0C2-42B519CC6341}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Web.HttpUtility.dll"/>
     <ROW Component="System.Web.dll" ComponentId="{F575D883-B220-4F47-94DB-379061413282}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Web.dll"/>
-    <ROW Component="System.Windows.Extensions.dll" ComponentId="{FE773FDF-490B-4714-98C0-42CCF0842745}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Extensions.dll"/>
     <ROW Component="System.Windows.dll" ComponentId="{A1D5D9C7-47F8-464D-A61D-F8AFBB67E8A8}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Windows.dll"/>
     <ROW Component="System.Xml.Linq.dll" ComponentId="{ACC2CDDE-C14C-4D4E-867B-6EBA0B9F12E5}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
     <ROW Component="System.Xml.ReaderWriter.dll" ComponentId="{807FC287-E47F-4588-8E54-CF96751592CB}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Xml.ReaderWriter.dll"/>
@@ -469,14 +458,6 @@
     <ROW Component="System.Xml.XmlSerializer.dll" ComponentId="{539E4C95-FF4D-402F-B408-6391D7046A05}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Xml.XmlSerializer.dll"/>
     <ROW Component="System.Xml.dll" ComponentId="{D3A1A3BE-2689-4BA6-B46E-6D778EE58D1B}" Directory_="ref_Dir" Attributes="0" KeyPath="System.Xml.dll"/>
     <ROW Component="System.dll" ComponentId="{0D0D6E02-1ED6-4821-B62C-F7991ACAFE61}" Directory_="ref_Dir" Attributes="0" KeyPath="System.dll"/>
-    <ROW Component="Telerik.Windows.Controls.Data.dll" ComponentId="{0B5C1C2F-6F9C-4CBC-A684-472970809F6B}" Directory_="APPDIR" Attributes="0" KeyPath="Telerik.Windows.Controls.Data.dll"/>
-    <ROW Component="Telerik.Windows.Controls.GridView.dll" ComponentId="{D4F9E156-BA7B-469D-BC46-1FB50C91B5A8}" Directory_="APPDIR" Attributes="0" KeyPath="Telerik.Windows.Controls.GridView.dll"/>
-    <ROW Component="Telerik.Windows.Controls.Input.dll" ComponentId="{70EB40BB-5F0C-42CA-BF1B-8A3FEB3F6A96}" Directory_="APPDIR" Attributes="0" KeyPath="Telerik.Windows.Controls.Input.dll"/>
-    <ROW Component="Telerik.Windows.Controls.Navigation.dll" ComponentId="{33E32CF0-208D-4389-AB03-A34320726035}" Directory_="APPDIR" Attributes="0" KeyPath="Telerik.Windows.Controls.Navigation.dll"/>
-    <ROW Component="Telerik.Windows.Controls.dll" ComponentId="{38E39336-4DB0-43C8-846C-AF63330459EE}" Directory_="APPDIR" Attributes="0" KeyPath="Telerik.Windows.Controls.dll"/>
-    <ROW Component="Telerik.Windows.Data.dll" ComponentId="{86E32039-12BC-4D2B-8B5C-FBC4CA64387A}" Directory_="APPDIR" Attributes="0" KeyPath="Telerik.Windows.Data.dll"/>
-    <ROW Component="Telerik.Windows.Themes.Office2016.dll" ComponentId="{588CD3F2-86E9-444D-85F4-9AD38C3A43C6}" Directory_="APPDIR" Attributes="0" KeyPath="Telerik.Windows.Themes.Office2016.dll"/>
-    <ROW Component="Telerik.Windows.Themes.Office2019.dll" ComponentId="{85505E4F-270C-4F8C-A9AC-D58438DC823B}" Directory_="APPDIR" Attributes="0" KeyPath="Telerik.Windows.Themes.Office2019.dll"/>
     <ROW Component="Vanara.Core.dll" ComponentId="{20B7705E-09B0-4CD3-B6D9-92DD8876D91E}" Directory_="APPDIR" Attributes="0" KeyPath="Vanara.Core.dll"/>
     <ROW Component="Vanara.Core.dll_1" ComponentId="{8FC0C4FF-9593-43AE-91F2-B4C42CF55FA2}" Directory_="Lithnet.AccessManager.PowerShell_Directory" Attributes="0" KeyPath="Vanara.Core.dll_1"/>
     <ROW Component="Vanara.PInvoke.Cryptography.dll" ComponentId="{2EF1B4E9-87AD-4768-8E40-47CFD2CC4162}" Directory_="APPDIR" Attributes="0" KeyPath="Vanara.PInvoke.Cryptography.dll"/>
@@ -1038,41 +1019,15 @@
     <ROW File="System.Diagnostics.DiagnosticSource.dll_1" Component_="System.Diagnostics.DiagnosticSource.dll_1" FileName="SYSTE~36.DLL|System.Diagnostics.DiagnosticSource.dll" Attributes="0" SourcePath="output\System.Diagnostics.DiagnosticSource.dll" SelfReg="false"/>
     <ROW File="Lithnet.Licensing.Core.dll" Component_="Lithnet.Licensing.Core.dll" FileName="LITHNE~8.DLL|Lithnet.Licensing.Core.dll" Attributes="0" SourcePath="output\Lithnet.Licensing.Core.dll" SelfReg="false"/>
     <ROW File="passworddisplayoptions.js" Component_="clipboard.js" FileName="PASSWO~1.JS|password-display-options.js" Attributes="0" SourcePath="output\wwwroot\js\password-display-options.js" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Api.deps.json" Component_="Lithnet.AccessManager.Server.UI.deps.json" FileName="LITHNE~5.JSO|Lithnet.AccessManager.Api.deps.json" Attributes="0" SourcePath="output\Lithnet.AccessManager.Api.deps.json" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Api.dll" Component_="Lithnet.AccessManager.Api.dll" FileName="LITHNE~9.DLL|Lithnet.AccessManager.Api.dll" Attributes="0" SourcePath="output\Lithnet.AccessManager.Api.dll" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Api.exe" Component_="Lithnet.AccessManager.Api.exe" FileName="LITHNE~3.EXE|Lithnet.AccessManager.Api.exe" Attributes="0" SourcePath="output\Lithnet.AccessManager.Api.exe" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Api.pdb" Component_="Lithnet.AccessManager.Api.exe" FileName="LITHNE~6.PDB|Lithnet.AccessManager.Api.pdb" Attributes="0" SourcePath="output\Lithnet.AccessManager.Api.pdb" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Api.runtimeconfig.json" Component_="Lithnet.AccessManager.Server.UI.deps.json" FileName="LITHNE~6.JSO|Lithnet.AccessManager.Api.runtimeconfig.json" Attributes="0" SourcePath="output\Lithnet.AccessManager.Api.runtimeconfig.json" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Api.Shared.dll" Component_="Lithnet.AccessManager.Api.Shared.dll" FileName="LITHN~10.DLL|Lithnet.AccessManager.Api.Shared.dll" Attributes="0" SourcePath="output\Lithnet.AccessManager.Api.Shared.dll" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Api.Shared.pdb" Component_="Lithnet.AccessManager.Api.Shared.dll" FileName="LITHNE~7.PDB|Lithnet.AccessManager.Api.Shared.pdb" Attributes="0" SourcePath="output\Lithnet.AccessManager.Api.Shared.pdb" SelfReg="false"/>
-    <ROW File="Microsoft.Graph.Auth.dll" Component_="Microsoft.Graph.Auth.dll" FileName="MICRO~74.DLL|Microsoft.Graph.Auth.dll" Attributes="0" SourcePath="output\Microsoft.Graph.Auth.dll" SelfReg="false"/>
-    <ROW File="Microsoft.Graph.Core.dll" Component_="Microsoft.Graph.Core.dll" FileName="MICRO~75.DLL|Microsoft.Graph.Core.dll" Attributes="0" SourcePath="output\Microsoft.Graph.Core.dll" SelfReg="false"/>
-    <ROW File="Microsoft.Graph.dll" Component_="Microsoft.Graph.dll" FileName="MICRO~76.DLL|Microsoft.Graph.dll" Attributes="0" SourcePath="output\Microsoft.Graph.dll" SelfReg="false"/>
-    <ROW File="Microsoft.Win32.Registry.dll" Component_="Microsoft.Win32.Registry.dll" FileName="MICRO~77.DLL|Microsoft.Win32.Registry.dll" Attributes="0" SourcePath="output\Microsoft.Win32.Registry.dll" SelfReg="false"/>
-    <ROW File="Microsoft.Win32.SystemEvents.dll" Component_="Microsoft.Win32.SystemEvents.dll" FileName="MICRO~78.DLL|Microsoft.Win32.SystemEvents.dll" Attributes="0" SourcePath="output\Microsoft.Win32.SystemEvents.dll" SelfReg="false"/>
-    <ROW File="System.Diagnostics.EventLog.dll" Component_="System.Diagnostics.EventLog.dll" FileName="SYSTE~37.DLL|System.Diagnostics.EventLog.dll" Attributes="0" SourcePath="output\System.Diagnostics.EventLog.dll" SelfReg="false"/>
-    <ROW File="System.Drawing.Common.dll" Component_="System.Drawing.Common.dll" FileName="SYSTE~38.DLL|System.Drawing.Common.dll" Attributes="0" SourcePath="output\System.Drawing.Common.dll" SelfReg="false"/>
-    <ROW File="System.IO.FileSystem.AccessControl.dll" Component_="System.IO.FileSystem.AccessControl.dll" FileName="SYSTE~39.DLL|System.IO.FileSystem.AccessControl.dll" Attributes="0" SourcePath="output\System.IO.FileSystem.AccessControl.dll" SelfReg="false"/>
-    <ROW File="System.Linq.Async.dll" Component_="System.Linq.Async.dll" FileName="SYSTE~40.DLL|System.Linq.Async.dll" Attributes="0" SourcePath="output\System.Linq.Async.dll" SelfReg="false"/>
-    <ROW File="System.Security.AccessControl.dll" Component_="System.Security.AccessControl.dll" FileName="SYSTE~41.DLL|System.Security.AccessControl.dll" Attributes="0" SourcePath="output\System.Security.AccessControl.dll" SelfReg="false"/>
-    <ROW File="System.Security.Permissions.dll" Component_="System.Security.Permissions.dll" FileName="SYSTE~42.DLL|System.Security.Permissions.dll" Attributes="0" SourcePath="output\System.Security.Permissions.dll" SelfReg="false"/>
     <ROW File="System.Security.Principal.Windows.dll" Component_="System.Security.Principal.Windows.dll" FileName="SYSTE~43.DLL|System.Security.Principal.Windows.dll" Attributes="0" SourcePath="output\System.Security.Principal.Windows.dll" SelfReg="false"/>
-    <ROW File="System.Windows.Extensions.dll" Component_="System.Windows.Extensions.dll" FileName="SYSTE~44.DLL|System.Windows.Extensions.dll" Attributes="0" SourcePath="output\System.Windows.Extensions.dll" SelfReg="false"/>
-    <ROW File="Telerik.Windows.Controls.Data.dll" Component_="Telerik.Windows.Controls.Data.dll" FileName="TELERI~1.DLL|Telerik.Windows.Controls.Data.dll" Attributes="0" SourcePath="output\Telerik.Windows.Controls.Data.dll" SelfReg="false"/>
-    <ROW File="Telerik.Windows.Controls.dll" Component_="Telerik.Windows.Controls.dll" FileName="TELERI~2.DLL|Telerik.Windows.Controls.dll" Attributes="0" SourcePath="output\Telerik.Windows.Controls.dll" SelfReg="false"/>
-    <ROW File="Telerik.Windows.Controls.GridView.dll" Component_="Telerik.Windows.Controls.GridView.dll" FileName="TELERI~3.DLL|Telerik.Windows.Controls.GridView.dll" Attributes="0" SourcePath="output\Telerik.Windows.Controls.GridView.dll" SelfReg="false"/>
-    <ROW File="Telerik.Windows.Controls.Input.dll" Component_="Telerik.Windows.Controls.Input.dll" FileName="TELERI~4.DLL|Telerik.Windows.Controls.Input.dll" Attributes="0" SourcePath="output\Telerik.Windows.Controls.Input.dll" SelfReg="false"/>
-    <ROW File="Telerik.Windows.Controls.Navigation.dll" Component_="Telerik.Windows.Controls.Navigation.dll" FileName="TELERI~5.DLL|Telerik.Windows.Controls.Navigation.dll" Attributes="0" SourcePath="output\Telerik.Windows.Controls.Navigation.dll" SelfReg="false"/>
-    <ROW File="Telerik.Windows.Data.dll" Component_="Telerik.Windows.Data.dll" FileName="TELERI~6.DLL|Telerik.Windows.Data.dll" Attributes="0" SourcePath="output\Telerik.Windows.Data.dll" SelfReg="false"/>
-    <ROW File="Telerik.Windows.Themes.Office2016.dll" Component_="Telerik.Windows.Themes.Office2016.dll" FileName="TELERI~7.DLL|Telerik.Windows.Themes.Office2016.dll" Attributes="0" SourcePath="output\Telerik.Windows.Themes.Office2016.dll" SelfReg="false"/>
-    <ROW File="Telerik.Windows.Themes.Office2019.dll" Component_="Telerik.Windows.Themes.Office2019.dll" FileName="TELERI~8.DLL|Telerik.Windows.Themes.Office2019.dll" Attributes="0" SourcePath="output\Telerik.Windows.Themes.Office2019.dll" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Cryptography.dll" Component_="Lithnet.AccessManager.Cryptography.dll" FileName="LITHN~11.DLL|Lithnet.AccessManager.Cryptography.dll" Attributes="0" SourcePath="output\Lithnet.AccessManager.Cryptography.dll" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Cryptography.pdb" Component_="Lithnet.AccessManager.Cryptography.dll" FileName="LITHNE~8.PDB|Lithnet.AccessManager.Cryptography.pdb" Attributes="0" SourcePath="output\Lithnet.AccessManager.Cryptography.pdb" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Cryptography.dll_1" Component_="Lithnet.AccessManager.Cryptography.dll_1" FileName="LITHNE~4.DLL|Lithnet.AccessManager.Cryptography.dll" Attributes="0" SourcePath="output-ps\Lithnet.AccessManager.Cryptography.dll" SelfReg="false"/>
-    <ROW File="Lithnet.AccessManager.Cryptography.pdb_1" Component_="Lithnet.AccessManager.Cryptography.dll_1" FileName="LITHNE~3.PDB|Lithnet.AccessManager.Cryptography.pdb" Attributes="0" SourcePath="output-ps\Lithnet.AccessManager.Cryptography.pdb" SelfReg="false"/>
-    <ROW File="cardselection.js" Component_="clipboard.js" FileName="CARD-S~1.JS|card-selection.js" Attributes="0" SourcePath="output\wwwroot\js\card-selection.js" SelfReg="false"/>
-    <ROW File="Microsoft.Extensions.DependencyInjection.dll_1" Component_="Microsoft.Extensions.DependencyInjection.dll_1" FileName="MICROS~3.DLL|Microsoft.Extensions.DependencyInjection.dll" Attributes="0" SourcePath="output-ps\Microsoft.Extensions.DependencyInjection.dll" SelfReg="false"/>
-    <ROW File="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" Component_="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" FileName="MICROS~5.DLL|Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" Attributes="0" SourcePath="output\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.AspNetCore.Http.Abstractions.dll" Component_="Microsoft.AspNetCore.Http.Abstractions.dll" FileName="MICROS~6.DLL|Microsoft.AspNetCore.Http.Abstractions.dll" Attributes="0" SourcePath="output\Microsoft.AspNetCore.Http.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.AspNetCore.Http.Extensions.dll" Component_="Microsoft.AspNetCore.Http.Extensions.dll" FileName="MICROS~7.DLL|Microsoft.AspNetCore.Http.Extensions.dll" Attributes="0" SourcePath="output\Microsoft.AspNetCore.Http.Extensions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.AspNetCore.Http.Features.dll" Component_="Microsoft.AspNetCore.Http.Features.dll" FileName="MICROS~8.DLL|Microsoft.AspNetCore.Http.Features.dll" Attributes="0" SourcePath="output\Microsoft.AspNetCore.Http.Features.dll" SelfReg="false"/>
+    <ROW File="Microsoft.AspNetCore.HttpOverrides.dll" Component_="Microsoft.AspNetCore.HttpOverrides.dll" FileName="MICRO~51.DLL|Microsoft.AspNetCore.HttpOverrides.dll" Attributes="0" SourcePath="output\Microsoft.AspNetCore.HttpOverrides.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Net.Http.Headers.dll" Component_="Microsoft.Net.Http.Headers.dll" FileName="MICRO~79.DLL|Microsoft.Net.Http.Headers.dll" Attributes="0" SourcePath="output\Microsoft.Net.Http.Headers.dll" SelfReg="false"/>
+    <ROW File="System.IO.Pipelines.dll" Component_="System.IO.Pipelines.dll" FileName="SYSTE~35.DLL|System.IO.Pipelines.dll" Attributes="0" SourcePath="output\System.IO.Pipelines.dll" SelfReg="false"/>
+    <ROW File="CsvHelper.dll_1" Component_="CsvHelper.dll_1" FileName="CSVHEL~1.DLL|CsvHelper.dll" Attributes="0" SourcePath="output-ps\CsvHelper.dll" SelfReg="false"/>
+    <ROW File="NLog.dll_1" Component_="NLog.dll_1" FileName="NLog.dll" Attributes="0" SourcePath="output-ps\NLog.dll" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.custcomp.AiControlConditionAliasComponent">
     <ROW AliasRowId="ExitDialog#LaunchProdCheckBox#Hide#((NOT AI_INSTALL) AND (NOT AI_PATCH)) OR ((CTRLS &lt;&gt; 2) AND (CTRLS &lt;&gt; 3))" AliasRowOperation="2" Condition="(((NOT AI_INSTALL) AND (NOT AI_PATCH)) OR ((CTRLS &lt;&gt; 2) AND (CTRLS &lt;&gt; 3))) OR NOT IS_STANDALONE_OR_NOT_CLUSTERED_OR_ON_ACTIVE_NODE"/>
@@ -1857,38 +1812,19 @@
     <ROW Feature_="MainFeature" Component_="Quartz.Serialization.Json.dll"/>
     <ROW Feature_="MainFeature" Component_="System.Diagnostics.DiagnosticSource.dll_1"/>
     <ROW Feature_="MainFeature" Component_="Lithnet.Licensing.Core.dll"/>
-    <ROW Feature_="MainFeature" Component_="Lithnet.AccessManager.Api.dll"/>
-    <ROW Feature_="MainFeature" Component_="Lithnet.AccessManager.Api.exe"/>
-    <ROW Feature_="MainFeature" Component_="Lithnet.AccessManager.Api.Shared.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Graph.Auth.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Graph.Core.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Graph.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Win32.Registry.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Win32.SystemEvents.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Diagnostics.EventLog.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Drawing.Common.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.IO.FileSystem.AccessControl.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Linq.Async.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Security.AccessControl.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Security.Permissions.dll"/>
+    <ROW Feature_="MainFeature" Component_="CsvHelper.dll_1"/>
     <ROW Feature_="MainFeature" Component_="System.Security.Principal.Windows.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Windows.Extensions.dll"/>
-    <ROW Feature_="MainFeature" Component_="Telerik.Windows.Controls.Data.dll"/>
-    <ROW Feature_="MainFeature" Component_="Telerik.Windows.Controls.dll"/>
-    <ROW Feature_="MainFeature" Component_="Telerik.Windows.Controls.GridView.dll"/>
-    <ROW Feature_="MainFeature" Component_="Telerik.Windows.Controls.Input.dll"/>
-    <ROW Feature_="MainFeature" Component_="Telerik.Windows.Controls.Navigation.dll"/>
-    <ROW Feature_="MainFeature" Component_="Telerik.Windows.Data.dll"/>
-    <ROW Feature_="MainFeature" Component_="Telerik.Windows.Themes.Office2016.dll"/>
-    <ROW Feature_="MainFeature" Component_="Telerik.Windows.Themes.Office2019.dll"/>
+    <ROW Feature_="MainFeature" Component_="NLog.dll_1"/>
     <ROW Feature_="RequiredApplication" Component_="RequiredApplication"/>
     <ROW Feature_="MainFeature" Component_="NewValue"/>
     <ROW Feature_="MainFeature" Component_="AMSAdmins"/>
     <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
-    <ROW Feature_="MainFeature" Component_="Lithnet.AccessManager.Cryptography.dll"/>
-    <ROW Feature_="MainFeature" Component_="Lithnet.AccessManager.Cryptography.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.DependencyInjection.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.AspNetCore.Http.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.AspNetCore.Http.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.AspNetCore.Http.Features.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.AspNetCore.HttpOverrides.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Net.Http.Headers.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.Pipelines.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="accessmanager.exe" SourcePath="..\Lithnet.AccessManager\access-manager.ico" Index="0"/>
@@ -2031,8 +1967,8 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
     <ROW PrereqKey="B467AE9894134312A9993D40B82F830D" DisplayName="PowerShell 5.0 for Windows 8.1/Server 2012R2 x64" VersionMin="5.0" SetupFileUrl="https://download.microsoft.com/download/2/C/6/2C6E1B4A-EBE5-48A6-B225-2D2058A9CEFB/Win8.1AndW2K12R2-KB3134758-x64.msu" Location="1" ExactSize="19764832" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 x64, Windows Server x64" Operator="1" NoUiComLine="/quiet" Options="xmy" MD5="a3255cb51f1bad3d78a0a0f777952823" TargetName="PowerShell 5.0"/>
-    <ROW PrereqKey="C6FE8A2F0943D2B7A0CB204E12F1F4" DisplayName="ASP.NET Core Runtime 3.1 x64" VersionMin="3.1" SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/dad6553b-3005-4b9f-b91e-ca759c9a36c3/9c63c8b6932a468180060a6a5fa24a00/aspnetcore-runtime-3.1.20-win-x64.exe" Location="1" ExactSize="7834832" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64" Operator="1" NoUiComLine="/q /norestart" Options="xym" MD5="abd5330ff2e09deff5dd13f613824674" TargetName="ASP.NET Core 3.1"/>
-    <ROW PrereqKey="D0156DFD814047AB868D49D0D15F8245" DisplayName=".NET Core Desktop Runtime 3.1 x64" VersionMin="3.1" SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/93c69a29-d379-4a5d-bb9e-3116cc14de41/907bbc52446d8bb7baa0c6faebde1d44/windowsdesktop-runtime-3.1.20-win-x64.exe" Location="1" ExactSize="54410952" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64" Operator="1" NoUiComLine="/q /norestart" Options="xym" MD5="8665af0f310d2cc5703d33579ea5235b" TargetName=".NET Core 3.1"/>
+    <ROW PrereqKey="C6FE8A2F0943D2B7A0CB204E12F1F4" DisplayName="ASP.NET Core Runtime 3.1 x64" VersionMin="3.1" VersionMax="3.9999" SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/dad6553b-3005-4b9f-b91e-ca759c9a36c3/9c63c8b6932a468180060a6a5fa24a00/aspnetcore-runtime-3.1.20-win-x64.exe" Location="1" ExactSize="7834832" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64" Operator="1" NoUiComLine="/q /norestart" Options="xym" MD5="abd5330ff2e09deff5dd13f613824674" TargetName="ASP.NET Core 3.1"/>
+    <ROW PrereqKey="D0156DFD814047AB868D49D0D15F8245" DisplayName=".NET Core Desktop Runtime 3.1 x64" VersionMin="3.1" VersionMax="3.9999" SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/93c69a29-d379-4a5d-bb9e-3116cc14de41/907bbc52446d8bb7baa0c6faebde1d44/windowsdesktop-runtime-3.1.20-win-x64.exe" Location="1" ExactSize="54410952" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64" Operator="1" NoUiComLine="/q /norestart" Options="xym" MD5="8665af0f310d2cc5703d33579ea5235b" TargetName=".NET Core 3.1"/>
     <ROW PrereqKey="RequiredApplication" DisplayName="SQL Express 2017" VersionMin="14.0" SetupFileUrl="https://download.microsoft.com/download/E/F/2/EF23C21D-7860-4F05-88CE-39AA114B014B/SQLEXPR_x64_ENU.exe" Location="1" ExactSize="289058768" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" Operator="1" ComLine="/x:&quot;%SystemDrive%\temp\sqlx&quot; /SkipInstallerRunCheck /ACTION=Install /ROLE=AllFeatures_WithDefaults /QUIETSIMPLE=True /UpdateEnabled=False /USEMICROSOFTUPDATE=&quot;False&quot; /FEATURES=SQLENGINE /INSTANCENAME=&quot;[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /INSTANCEID=&quot;[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /SQLTELSVCACCT=&quot;NT Service\SQLTELEMETRY$[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /AGTSVCACCOUNT=&quot;NT AUTHORITY\NETWORK SERVICE&quot; /AGTSVCSTARTUPTYPE=&quot;Disabled&quot; /SQLSVCSTARTUPTYPE=&quot;Automatic&quot; /SQLCOLLATION=&quot;Latin1_General_CI_AS&quot; /SQLSVCACCOUNT=&quot;NT Service\MSSQL$[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /SQLSYSADMINACCOUNTS=&quot;[SQLEXPRESS_DEFAULT_ADMINS]&quot; &quot;[USER_NAME]&quot; &quot;[AMS_ADMINS_NAME]&quot; /ADDCURRENTUSERASSQLADMIN=&quot;True&quot; /BROWSERSVCSTARTUPTYPE=&quot;Disabled&quot; /NPENABLED=&quot;0&quot; /TCPENABLED=&quot;0&quot; /IAcceptSQLServerLicenseTerms=True" BasicUiComLine="/x:&quot;%SystemDrive%\temp\sqlx&quot; /SkipInstallerRunCheck /ACTION=Install /ROLE=AllFeatures_WithDefaults /QUIETSIMPLE=True /UpdateEnabled=False /USEMICROSOFTUPDATE=&quot;False&quot; /FEATURES=SQLENGINE /INSTANCENAME=&quot;[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /INSTANCEID=&quot;[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /SQLTELSVCACCT=&quot;NT Service\SQLTELEMETRY$[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /AGTSVCACCOUNT=&quot;NT AUTHORITY\NETWORK SERVICE&quot; /AGTSVCSTARTUPTYPE=&quot;Disabled&quot; /SQLSVCSTARTUPTYPE=&quot;Automatic&quot; /SQLCOLLATION=&quot;Latin1_General_CI_AS&quot; /SQLSVCACCOUNT=&quot;NT Service\MSSQL$[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /SQLSYSADMINACCOUNTS=&quot;[SQLEXPRESS_DEFAULT_ADMINS]&quot; &quot;[USER_NAME]&quot; &quot;[AMS_ADMINS_NAME]&quot; /ADDCURRENTUSERASSQLADMIN=&quot;True&quot; /BROWSERSVCSTARTUPTYPE=&quot;Disabled&quot; /NPENABLED=&quot;0&quot; /TCPENABLED=&quot;0&quot; /IAcceptSQLServerLicenseTerms=True" NoUiComLine="/x:&quot;%SystemDrive%\temp\sqlx&quot; /SkipInstallerRunCheck /ACTION=Install /ROLE=AllFeatures_WithDefaults /QUIETSIMPLE=True /UpdateEnabled=False /USEMICROSOFTUPDATE=&quot;False&quot; /FEATURES=SQLENGINE /INSTANCENAME=&quot;[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /INSTANCEID=&quot;[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /SQLTELSVCACCT=&quot;NT Service\SQLTELEMETRY$[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /AGTSVCACCOUNT=&quot;NT AUTHORITY\NETWORK SERVICE&quot; /AGTSVCSTARTUPTYPE=&quot;Disabled&quot; /SQLSVCSTARTUPTYPE=&quot;Automatic&quot; /SQLCOLLATION=&quot;Latin1_General_CI_AS&quot; /SQLSVCACCOUNT=&quot;NT Service\MSSQL$[SQLEXPRESS_DEFAULT_INSTANCENAME]&quot; /SQLSYSADMINACCOUNTS=&quot;[SQLEXPRESS_DEFAULT_ADMINS]&quot; &quot;[USER_NAME]&quot; &quot;[AMS_ADMINS_NAME]&quot; /ADDCURRENTUSERASSQLADMIN=&quot;True&quot; /BROWSERSVCSTARTUPTYPE=&quot;Disabled&quot; /NPENABLED=&quot;0&quot; /TCPENABLED=&quot;0&quot; /IAcceptSQLServerLicenseTerms=True" Options="fx" MD5="409d2384684cd6a45c64bdd5414fbf24" TargetName="SQL Server Express 2017" Feature="RequiredApplication"/>
     <ATTRIBUTE name="PrereqsOrder" value="C6FE8A2F0943D2B7A0CB204E12F1F4 D0156DFD814047AB868D49D0D15F8245 B467AE9894134312A9993D40B82F830D RequiredApplication"/>
   </COMPONENT>
