@@ -457,5 +457,10 @@ namespace Lithnet.AccessManager
                 c.Add(value);
             }
         }
+
+        public static string EscapeAdsiComponent(this string component)
+        {
+            return component.Replace("/", @"\/");
+        }
     }
 }
